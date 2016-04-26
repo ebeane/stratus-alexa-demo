@@ -1,0 +1,19 @@
+SecurityGuardDrillIntent Run security drill
+SecurityGuardDrillIntent Run drill
+SecurityGuardDrillIntent Security drill
+
+
+DeployCountermeasuresIntent 
+
+
+HelpIntent Help me
+HelpIntent I need help
+HelpIntent Please help
+
+
+ProServIntent I need professional services
+ProServIntent Professional services
+
+
+ThankYouIntent Thank you
+ThankYouIntent Thanks

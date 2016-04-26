@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "intent": "SecurityGuardDrillIntent"
+    },
+    {
+      "intent": "DeployCountermeasuresIntent"
+    },
+    {
+      "intent": "HelpIntent"
+    },
+    {
+      "intent": "ProServIntent"
+    },
+    {
+      "intent": "ThankYouIntent"
+    }
+  ]
+}
