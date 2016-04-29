@@ -4,7 +4,7 @@
 var AWS = require('aws-sdk');
 AWS.config.region = 'us-east-1';
 
-var APP_ID = "";
+var APP_ID = "arn:aws:lambda:us-east-1:517218816149:function:EC2-Apply-SecurityGroup";
 
 /**
  * The AlexaSkill prototype and helper functions

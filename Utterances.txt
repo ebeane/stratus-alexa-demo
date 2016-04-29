@@ -11,7 +11,7 @@ QueryAlertIntent Detail alert
 DeployCountermeasuresIntent Apply security group
 DeployCountermeasuresIntent Apply security countermeasures
 DeployCountermeasuresIntent Block SSH
-DeployCountermeasuresIntent Lock down EC2 instance
+DeployCountermeasuresIntent Lock down instance
 
 
 HelpIntent Help me
