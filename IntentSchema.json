@@ -4,6 +4,9 @@
       "intent": "SecurityGuardDrillIntent"
     },
     {
+      "intent": "QueryAlertIntent"
+    },
+    {
       "intent": "DeployCountermeasuresIntent"
     },
     {

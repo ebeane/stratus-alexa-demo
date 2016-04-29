@@ -2,8 +2,16 @@ SecurityGuardDrillIntent Run security drill
 SecurityGuardDrillIntent Run drill
 SecurityGuardDrillIntent Security drill
 
+QueryAlertIntent What's wrong
+QueryAlertIntent What is wrong
+QueryAlertIntent Report alert
+QueryAlertIntent W T F
+QueryAlertIntent Detail alert
 
-DeployCountermeasuresIntent 
+DeployCountermeasuresIntent Apply security group
+DeployCountermeasuresIntent Apply security countermeasures
+DeployCountermeasuresIntent Block SSH
+DeployCountermeasuresIntent Lock down EC2 instance
 
 
 HelpIntent Help me
