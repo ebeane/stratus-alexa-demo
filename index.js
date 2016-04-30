@@ -21,7 +21,7 @@
 /**
  *  * App ID for the skill
  *   */
-var APP_ID = arn:aws:lambda:us-east-1:517218816149:function:EC2-Apply-SecurityGroup;
+var APP_ID = amzn1.echo-sdk-ams.app.02dfa27b-5eef-4858-9efd-eaade5795448;
 
 /**
  *  * The AlexaSkill prototype and helper functions
