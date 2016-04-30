@@ -55,10 +55,10 @@ var demoParams = {
   //SourceSecurityGroupOwnerId: 'STRING_VALUE',
   //ToPort: 0
 };
-ec2.revokeSecurityGroupIngress(params, function(err, data) {
-  if (err) console.log(err, err.stack); // an error occurred
-  else     console.log(data);           // successful response
-});
+
+var SecurityGuard = function () {
+	AlexaSkill.call(this, APP_ID);
+}; 
 
 // Extend AlexaSkill
 SecurityGuard.prototype = Object.create(AlexaSkill.prototype);
