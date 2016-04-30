@@ -21,7 +21,8 @@
 /**
  *  * App ID for the skill
  *   */
-var APP_ID = amzn1.echo-sdk-ams.app.02dfa27b-5eef-4858-9efd-eaade5795448;
+//var APP_ID = amzn1.echo-sdk-ams.app.02dfa27b-5eef-4858-9efd-eaade5795448;
+var APP_ID = undefined;
 
 /**
  *  * The AlexaSkill prototype and helper functions
@@ -63,8 +64,8 @@ SecurityGuard.prototype.eventHandlers.onSessionEnded = function (sessionEndedReq
 
 SecurityGuard.prototype.intentHandlers = {
     // register custom intent handlers
-    "SecurityGuardIntent": function (intent, session, response) {
-        response.tellWithCard("Hello World!", "Greeter", "Hello World!");
+    "SecurityGuardDrillIntent": function (intent, session, response) {
+        response.tellWithCard("Hello World!", "Security Guard", "Hello World!");
     },
     "QueryAlertIntent": function (intent, session, response) {
         response.ask("You can say hello to me!", "You can say hello to me!");
