@@ -18,6 +18,9 @@
  *        *  Alexa: "Hello World!"
  *         */
 
+var AWS = require('aws-sdk');
+AWS.config.region = 'us-east-1';
+
 /**
  *  * App ID for the skill
  *   */
@@ -28,6 +31,29 @@ var APP_ID = undefined;
  *  * The AlexaSkill prototype and helper functions
  *   */
 var AlexaSkill = require('./AlexaSkill');
+
+var demo = new AWS.EC2();
+
+var demoParams = {
+
+   IpPermissions: [
+	{
+	  FromPort: 22
+	  IpProtocol: 'tcp'
+	  ToPort: 22
+	  UserIdGroupPairs: [
+
+	    {
+		GroupId: 'sg-059c807d',
+		UserId: '517218816149',
+		VpcId: 'vpc-a47b94c3'
+	    },
+
+	  ],
+	},
+   ],
+
+};
 
 /**
  *  * SecurityGuard is a child of AlexaSkill.
@@ -79,9 +105,9 @@ SecurityGuard.prototype.intentHandlers = {
     "ProServIntent": function (intent, session, response) {
         response.ask("If you require assistance automating your AWS environment, Stratus engineers are available to provide expertise for a wide range of cloud services and technologies. Please contact Stratus Solutions for more details.", " ");
     },
-    "ThankYoutIntent": function (intent, session, response) {
+    "ThankYouIntent": function (intent, session, response) {
         response.ask("You are quite welcome. Have a great day everyone and thank you for attending our demo.", " ");
-    },
+    }
 };
 
 // Create the handler that responds to the Alexa Request.
