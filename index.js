@@ -68,20 +68,20 @@ SecurityGuard.prototype.intentHandlers = {
         response.tellWithCard("This is just a drill. If this were an actual emergency, you could ask me to apply an EC2 Security Group to project your EC2 instances from the bad guys.", "Security Guard", "Security Drill");
     },
     "QueryAlertIntent": function (intent, session, response) {
-        response.ask("Alert! Incoming SSH brute force attack!", "Alert! Incoming SSH brute force attack!");
+        response.ask("Alert! Incoming SSH brute force attack!", " ");
     },
     "DeployCountermeasuresIntent": function (intent, session, response) {
-        response.ask("Applying security counter measures now.", "Applying security counter measures now.");
+        response.ask("Applying security counter measures now.", "n");
     },
     "HelpIntent": function (intent, session, response) {
-        response.ask("If you're having trouble, please see the documentation for this Skill for a list of things that you can say to me. If you require more direct assistance, please say, I need professional services", "If you're having trouble, please see the documentation for this Skill for a list of things that you can say to me. If you require more direct assistance, please say, I need professional services");
+        response.ask("If you're having trouble, please see the documentation for this Skill for a list of things that you can say to me. If you require more direct assistance, please say, I need professional services", " ");
     },
     "ProServIntent": function (intent, session, response) {
-        response.ask("If you require assistance automating your AWS environment, Stratus engineers are available to provide expertise for a wide range of cloud services and technologies. Please contact Stratus Solutions for more details.", "If you require assistance automating your AWS environment, Stratus engineers are available to provide expertise for a wide range of cloud services and technologies. Please contact Stratus Solutions for more details.");
+        response.ask("If you require assistance automating your AWS environment, Stratus engineers are available to provide expertise for a wide range of cloud services and technologies. Please contact Stratus Solutions for more details.", " ");
     },
     "ThankYoutIntent": function (intent, session, response) {
-        response.ask("You are quite welcome. Have a great day everyone and thank you for attending our demo.", "You are quite welcome. Have a great day everyone and thank you for attending our demo.");
-    }
+        response.ask("You are quite welcome. Have a great day everyone and thank you for attending our demo.", " ");
+    },
 };
 
 // Create the handler that responds to the Alexa Request.
